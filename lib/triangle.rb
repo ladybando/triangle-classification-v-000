@@ -23,7 +23,10 @@ class Triangle
 
   def illegal_triangle?
     if @length1 == 0 && @length2 == 0 && @length3 == 0
-      puts
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+          puts error.message
     end
   end
 
