@@ -26,6 +26,8 @@ class Triangle
   end
 
   def illegal_triangle?
+    if @length1 == 0 && @length2 == 0 && @length3 == 0
+      puts error.message
   end
 
   class TriangleError < StandardError
