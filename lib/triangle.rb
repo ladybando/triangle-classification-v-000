@@ -9,13 +9,9 @@ class Triangle
 
   def kind
 
-    if illegal_triangle?
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
-    elsif @length1 == @length2 && @length2 == @length3 && @length1 == @length3
+  illegal_triangle?
+
+    if @length1 == @length2 && @length2 == @length3 && @length1 == @length3
       :equilateral
     elsif
       @length1 == @length2 || @length2 == @length3|| @length1 == @length3
@@ -27,7 +23,7 @@ class Triangle
 
   def illegal_triangle?
     if @length1 == 0 && @length2 == 0 && @length3 == 0
-      puts error.message
+      puts
     end
   end
 
