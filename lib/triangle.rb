@@ -24,7 +24,7 @@ class Triangle
   def illegal_triangle?
     if @length1 == 0 && @length2 == 0 && @length3 == 0
     elsif @length1 <0 && @length2 < 0 && @length3 < 0
-    elsif @length1 = 0 && @length2 = 0 && @length3 = 0
+    elsif @length1 <= 0 && @length2 <= 0 && @length3 <= 0
       begin
         raise TriangleError
       end
