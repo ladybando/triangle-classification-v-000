@@ -15,10 +15,10 @@ class Triangle
       rescue TriangleError => error
           puts error.message
       end
-    elsif length1 == length2 && length2 == length3
+    elsif @length1 == @length2 && @length2 == @length3
       :equilateral
     elsif
-      length1 == length2 || length2 == length3|| length1 == length3
+      @length1 == @length2 || @length2 == @length3|| @length1 == @length3
       :isosceles
     else
       :scalene
