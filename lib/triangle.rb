@@ -16,9 +16,9 @@ class Triangle
           puts error.message
       end
     elsif length1 == length2 && length2 == length3
-    :equilateral
+      :equilateral
     elsif
-      side1 == side2 || side2 == side3|| side1 == side3
+      length1 == length2 || length2 == length3|| length1 == length3
       :isosceles
     else
       :scalene
