@@ -25,8 +25,6 @@ class Triangle
     if @length1 == 0 && @length2 == 0 && @length3 == 0
       begin
         raise TriangleError
-      rescue TriangleError => error
-          puts error.message
       end
     end
   end
